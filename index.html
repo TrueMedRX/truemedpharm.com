@@ -15,42 +15,73 @@
       <div class="logo">TrueMed RX</div>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="hours.html">Hours</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#refill">Refill</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hours">Hours</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero">
+  <section id="home" class="hero animate">
     <div class="container">
       <h1>Care You Can Count On</h1>
       <p>Delivering reliable, personalized pharmacy care in East Northport, NY</p>
     </div>
   </section>
 
-  <section class="highlights container">
-    <div class="highlight">
-      <i class="fa-solid fa-truck-medical fa-2x"></i>
-      <h3>Free Delivery</h3>
-      <p>We bring your medications to your doorstep.</p>
+  <section id="services" class="highlights container animate">
+    <h2>Our Services</h2>
+    <div class="highlight-grid">
+      <div class="highlight">
+        <i class="fa-solid fa-truck-medical fa-2x"></i>
+        <h3>Free Delivery</h3>
+        <p>We bring your medications to your doorstep.</p>
+      </div>
+      <div class="highlight">
+        <i class="fa-solid fa-capsules fa-2x"></i>
+        <h3>Compounding</h3>
+        <p>Custom-made medications for your unique needs.</p>
+      </div>
+      <div class="highlight">
+        <i class="fa-solid fa-vial fa-2x"></i>
+        <h3>DMV & Passport</h3>
+        <p>Vision tests and passport photos on site.</p>
+      </div>
     </div>
-    <div class="highlight">
-      <i class="fa-solid fa-capsules fa-2x"></i>
-      <h3>Compounding</h3>
-      <p>Custom-made medications for your unique needs.</p>
-    </div>
-    <div class="highlight">
-      <i class="fa-solid fa-vial fa-2x"></i>
-      <h3>DMV & Passport</h3>
-      <p>Vision tests and passport photos on site.</p>
-    </div>
+  </section>
+
+  <section id="refill" class="form-section container animate">
+    <h2>Refill Request</h2>
+    <form action="#" method="POST">
+      <input type="text" placeholder="Full Name" required />
+      <input type="text" placeholder="Date of Birth" required />
+      <input type="text" placeholder="Prescription Number(s)" required />
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+  <section id="contact" class="form-section container animate">
+    <h2>Contact Us</h2>
+    <form action="#" method="POST">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <section id="hours" class="container animate">
+    <h2>Hours of Operation</h2>
+    <p>Sunday–Thursday: 10 AM – 7 PM<br>Friday: 10 AM – 3:30 PM<br>Saturday: Closed</p>
   </section>
 
   <footer class="footer">
     <p>&copy; 2025 TrueMed RX Inc. | Care You Can Count On</p>
   </footer>
+
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

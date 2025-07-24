@@ -14,16 +14,19 @@ body, html {
 .topbar {
   background-color: #00363a;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.topbar .logo {
+.logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .nav-links a {
   color: white;
@@ -33,33 +36,68 @@ body, html {
 .hero {
   background: linear-gradient(to right, #00796b, #004d40);
   color: white;
-  padding: 4rem 0;
+  padding: 4rem 1rem;
   text-align: center;
 }
-.hero h1 {
-  font-size: 2.5rem;
+h2 {
+  margin-top: 2rem;
+  text-align: center;
+  color: #00363a;
 }
-.hero p {
-  font-size: 1.2rem;
-  margin-top: 1rem;
-}
-.highlights {
+.highlight-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2rem 0;
-  text-align: center;
+  gap: 2rem;
 }
 .highlight {
-  flex: 1;
-  padding: 1rem;
+  flex: 1 1 250px;
+  text-align: center;
 }
-.highlight i {
-  color: #00796b;
+.form-section {
+  margin-top: 3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input, form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background-color: #00796b;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 .footer {
   background-color: #00251a;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
   margin-top: 2rem;
+}
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+.animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (max-width: 768px) {
+  .highlight-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
