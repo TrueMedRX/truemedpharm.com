@@ -1,16 +1,23 @@
-
 body {
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    color: #222;
     margin: 0;
     padding: 0;
+    background: #f5f9ff;
+    color: #333;
 }
 header {
-    background: #2f5d62;
-    color: white;
-    padding: 20px;
     text-align: center;
+    background: #005d63;
+    color: white;
+    padding: 20px 10px;
+}
+.logo {
+    width: 180px;
+    height: auto;
+}
+.tagline {
+    font-size: 1.2em;
+    color: #9acd32;
 }
 main {
     padding: 20px;
@@ -18,12 +25,16 @@ main {
 section {
     margin-bottom: 30px;
 }
-h2 {
-    color: #2f5d62;
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+.services li::before {
+    content: "✔️ ";
 }
 footer {
-    background: #222;
-    color: white;
     text-align: center;
-    padding: 10px 0;
+    background: #eee;
+    padding: 10px;
+    color: #666;
 }
