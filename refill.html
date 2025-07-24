@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Refill Request - TrueMed RX</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header><h1>Request a Refill</h1></header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="refill.html">Refill</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <main>
+    <section>
+      <h2>Fill Out the Form Below</h2>
+      <p><strong>Note:</strong> Please do not include personal medical information beyond what's required. Call us for sensitive details.</p>
+      <form action="https://formsubmit.co/TrueMedRXInc@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Refill Request">
+        <label>Full Name:</label><br>
+        <input type="text" name="name" required><br>
+        <label>Date of Birth:</label><br>
+        <input type="text" name="dob" required><br>
+        <label>Phone Number:</label><br>
+        <input type="text" name="phone"><br>
+        <label>Prescription Number(s):</label><br>
+        <textarea name="rx_numbers" required></textarea><br>
+        <label>Notes:</label><br>
+        <textarea name="notes"></textarea><br>
+        <button type="submit">Submit Refill Request</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 TrueMed RX</p>
+  </footer>
+</body>
+</html>
