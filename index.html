@@ -64,15 +64,21 @@
   <section id="refill" class="refill" data-aos="fade-up">
     <h3>Refill or Transfer Prescription</h3>
 <form action="https://formsubmit.co/62464f65489fe3b0eedf6092ea20b36b" method="POST">
-      <input type="text" placeholder="Full Name" required />
-      <input type="date" placeholder="DOB" required />
-      <input type="tel" placeholder="Phone Number" required />
-      <input type="email" placeholder="Email Address" required />
-      <input type="text" placeholder="Previous Pharmacy Name (if any)" />
-      <input type="text" placeholder="Prescription Name or RX Number" required />
-      <textarea placeholder="Additional Notes (optional)"></textarea>
-      <button type="submit">Submit Refill Request</button>
-    </form>
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_subject" value="New Prescription Refill Request">
+  <input type="hidden" name="_template" value="table">
+  <input type="hidden" name="_next" value="https://truemedpharm.com/thank-you.html">
+
+  <input type="text" name="Full Name" placeholder="Full Name" required />
+  <input type="date" name="DOB" placeholder="DOB" required />
+  <input type="tel" name="Phone Number" placeholder="Phone Number" required />
+  <input type="email" name="Email" placeholder="Email Address" required />
+  <input type="text" name="Previous Pharmacy" placeholder="Previous Pharmacy Name (if any)" />
+  <input type="text" name="RX Number" placeholder="Prescription Name or RX Number" required />
+  <textarea name="Notes" placeholder="Additional Notes (optional)"></textarea>
+  <button type="submit">Submit Refill Request</button>
+</form>
+
   </section>
 
   <section class="testimonials" data-aos="fade-up">
