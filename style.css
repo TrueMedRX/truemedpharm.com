@@ -1,0 +1,8 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f3fff3;
+  color: #222;
+  scroll-behavior: smooth;
+}
+/* (rest same as before for brevity) */
