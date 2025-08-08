@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>True Med RX Inc.</title>
+  <!-- Load Inter Font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
 </head>
 <body>
   <header>
-    <div class="logo-text">
-      <img src="https://i.ibb.co/ymWMtd5G/1753562433876-4dc11d47-f384-44cd-ba5f-6b6f920e37f2-1-removebg-preview.png" alt="True Med RX Logo" class="logo" />
+    <div class="logo-bg">
+      <img src="https://i.ibb.co/ymWMtd5G/1753562433876-4dc11d47-f384-44cd-ba5f-6b6f920e37f2-1-removebg-preview.png"
+           alt="True Med RX Logo" class="logo" />
     </div>
     <nav>
       <ul>
@@ -24,14 +27,17 @@
   </header>
 
   <section class="hero" id="home" data-aos="fade-up">
-    <h2>Welcome to True Med RX</h2>
-    <p>Your neighborhood pharmacy. Personalized care. Trusted service.</p>
-    <a href="#refill" class="btn">Request Refill</a>
+    <div class="hero-content">
+      <h2>Welcome to True Med RX</h2>
+      <p>Providing compassionate and expert care for every prescription need.</p>
+      <a href="#refill" class="btn">Refill Prescription</a>
+    </div>
   </section>
 
   <section id="about" class="about" data-aos="fade-up">
     <h3>About Us</h3>
-    <p>We are committed to delivering top-quality pharmacy care with a focus on our community. Fast service, reliable care, and your health is our mission.</p>
+    <p>At <strong>True Med RX Inc.</strong>, we're more than just a pharmacy we're your health partner. Located in the heart of East Northport, we’re committed to delivering exceptional care with a personal touch. From fast and accurate prescription refills to DMV vision tests, vaccines, and expert consultations, our services are designed around your needs.</p>
+    <p>We treat every customer like family, offering a warm, welcoming environment and the peace of mind that comes from knowing you're in good hands. At True Med RX Inc., your well-being is our priority every visit, every time.</p>
   </section>
 
   <section id="services" class="services" data-aos="fade-up">
@@ -40,32 +46,32 @@
       <div class="card">
         <img src="https://i.ibb.co/n87xqD7z/Vaccination.jpg" alt="Vaccination">
         <h4>Vaccinations</h4>
-        <p>Protect your health with our immunization services.</p>
+        <p>Protect your health with essential immunizations from trusted pharmacists.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/zW9TnqHV/consult.jpg" alt="Consultation">
+        <img src="https://i.ibb.co/yF5mpPnX/Pharmacist-consulting.webp" alt="Consultation">
         <h4>Consultations</h4>
-        <p>Personalized medication advice from experts.</p>
+        <p>Expert advice and personalized medication support.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/cmvQGbt/Workers-Compensation.jpg" alt="Workers Compensation">
+        <img src="https://i.ibb.co/5x6nkWXJ/Workers-Comp.png" alt="Workers' Compensation">
         <h4>Workers' Compensation</h4>
-        <p>We help you manage prescriptions from work-related injuries.</p>
+        <p>We process prescriptions for workers injured on the job — fast, compliant, and with care.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/ynbyNFNd/No-Fault.jpg" alt="No-Fault Insurance">
+        <img src="https://i.ibb.co/xSKNFmBp/No-Fault.jpg" alt="No-Fault Insurance">
         <h4>No-Fault Insurance</h4>
-        <p>Easy claim support for car accident medications.</p>
+        <p>Seamless medication support for auto accident claims covered by no-fault insurance.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/0VBHLhMt/PC.jpg" alt="Personalized Care">
+        <img src="https://i.ibb.co/gLqnjJfK/Personal-Pharmacy-Care.webp" alt="Personalized Care">
         <h4>Personalized Care</h4>
-        <p>Individual attention for every patient, every time.</p>
+        <p>Tailored solutions to fit your lifestyle and needs.</p>
       </div>
       <div class="card">
-        <img src="https://i.ibb.co/NgPJWm34/otc.jpg" alt="OTC Products">
+        <img src="https://i.ibb.co/3Y0Y5dgx/OTC.jpg" alt="OTC Products">
         <h4>OTC Products</h4>
-        <p>Over-the-counter essentials always in stock.</p>
+        <p>Essentials, supplements, and more — all in one place.</p>
       </div>
     </div>
   </section>
@@ -74,15 +80,15 @@
     <h3>Refill or Transfer Prescription</h3>
     <form action="https://formsubmit.co/62464f65489fe3b0eedf6092ea20b36b" method="POST">
       <input type="text" name="Full Name" placeholder="Full Name" required />
-      <input type="date" name="Date of Birth" required />
-      <input type="tel" name="Phone Number" placeholder="Phone Number" required />
-      <input type="email" name="Email" placeholder="Email" required />
-      <input type="text" name="Previous Pharmacy" placeholder="Previous Pharmacy Name (optional)" />
-      <input type="text" name="RX Number or Medication" placeholder="RX Number or Medication Name" required />
-      <textarea name="Additional Notes" placeholder="Additional Notes (optional)"></textarea>
-      <input type="hidden" name="_captcha" value="false">
+      <input type="date" name="DateOfBirth" placeholder="Date of Birth" required />
+      <input type="tel" name="Phone" placeholder="Phone Number" required />
+      <input type="email" name="Email" placeholder="Email Address" required />
+      <input type="text" name="Previous Pharmacy" placeholder="Previous Pharmacy Name (if any)" />
+      <input type="text" name="Prescription" placeholder="Prescription Name or RX Number" required />
+      <textarea name="Notes" placeholder="Additional Notes (optional)"></textarea>
       <input type="hidden" name="_next" value="https://truemedpharm.com/thank-you.html">
-      <button type="submit">Submit</button>
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit">Submit Refill Request</button>
     </form>
   </section>
 
@@ -100,11 +106,11 @@
   </section>
 
   <footer>
-    <p>© 2025 True Med RX Inc. | <a href="#">Privacy Policy</a> | <a href="#">HIPAA Disclaimer</a></p>
+    <p>© 2025 True Med RX Inc. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="hipaa.html">HIPAA Disclaimer</a></p>
     <p>Care You Can Count On</p>
   </footer>
 
-  <a href="https://wa.me/16319096010" class="whatsapp-float" target="_blank">💬</a>
+  <a href="https://wa.me/16319096010" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">💬</a>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
