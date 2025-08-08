@@ -350,7 +350,7 @@ footer a:hover {
   background: #128c7e;
 }
 
-/* Responsive Styles */
+/* Responsive Styles */ 
 @media (max-width: 950px) {
   .service-cards {
     flex-direction: column;
