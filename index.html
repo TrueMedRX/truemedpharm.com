@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>True Med RX Inc.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+
+  <!-- Header / Nav -->
+  <header class="site-header">
     <div class="logo-bg">
-      <img src="https://i.ibb.co/ymWMtd5G/1753562433876-4dc11d47-f384-44cd-ba5f-6b6f920e37f2-1-removebg-preview.png" alt="True Med RX Logo" class="logo" />
+      <img
+        class="logo"
+        src="https://i.ibb.co/ymWMtd5G/1753562433876-4dc11d47-f384-44cd-ba5f-6b6f920e37f2-1-removebg-preview.png"
+        alt="True Med RX Logo"
+        width="360"
+        height="88"
+      />
     </div>
-    <nav>
+
+    <nav class="nav">
       <ul>
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -21,140 +31,167 @@
         <li><a href="#refill">Refill</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="nav-toggle" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
-  <section class="hero" id="home" data-aos="fade-up">
+  <!-- Hero -->
+  <section id="home" class="hero">
     <div class="hero-content">
-      <h2>Welcome to True Med RX</h2>
+      <h1>Welcome to True Med RX</h1>
       <p>Providing compassionate and expert care for every prescription need.</p>
-      <a href="#refill" class="btn">Refill Prescription</a>
+      <a class="btn btn-primary" href="#refill">Refill Prescription</a>
+    </div>
+
+    <!-- Feature Chips under the hero title -->
+    <div class="feature-chips">
+      <div class="chip">
+        <span class="chip-icon">💳</span>
+        <div class="chip-text">
+          <strong>We Accept All Major Insurance</strong>
+          <small>Most plans accepted for fast, easy service.</small>
+        </div>
+      </div>
+
+      <div class="chip">
+        <span class="chip-icon">🚚</span>
+        <div class="chip-text">
+          <strong>We Offer Free Deliveries</strong>
+          <small>Prescriptions brought to your door at no extra charge.</small>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="about" class="about" data-aos="fade-up">
-    <h3>About Us</h3>
-    <p>At <strong>True Med RX Inc.</strong>, we’re more than just a pharmacy we’re your health partner. Located in the heart of East Northport, we’re committed to delivering exceptional care with a personal touch. From fast and accurate prescription refills to DMV vision tests, vaccines, and expert consultations, our services are designed around your needs.</p>
-    <p>We treat every customer like family, offering a warm, welcoming environment and the peace of mind that comes from knowing you’re in good hands. At True Med RX Inc., your well-being is our priority every visit, every time.</p>
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      At <strong>True Med RX Inc.</strong>, we're more than just a pharmacy — we're your health partner.
+      Located in the heart of East Northport, we’re committed to delivering exceptional care with a personal
+      touch. From fast and accurate prescription refills to DMV vision tests, vaccines, and expert consultations,
+      our services are designed around your needs.
+    </p>
+    <p>
+      We treat every customer like family, offering a warm, welcoming environment and the peace of mind that
+      comes from knowing you're in good hands. At True Med RX Inc., your well-being is our priority — every
+      visit, every time.
+    </p>
   </section>
 
-  <section id="services" class="services" data-aos="fade-up">
-    <h3>Our Services</h3>
+  <!-- Services -->
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+
     <div class="service-cards">
-      <div class="card">
-        <img src="https://i.ibb.co/n87xqD7z/Vaccination.jpg" alt="Vaccination">
-        <h4>Vaccinations</h4>
+      <article class="card">
+        <img src="https://i.ibb.co/n87xqD7z/Vaccination.jpg" alt="Vaccinations" />
+        <h3>Vaccinations</h3>
         <p>Protect your health with essential immunizations from trusted pharmacists.</p>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/yF5mpPnX/Pharmacist-consulting.webp" alt="Consultation">
-        <h4>Consultations</h4>
+      </article>
+
+      <article class="card">
+        <img src="https://i.ibb.co/yF5mpPnX/Pharmacist-consulting.webp" alt="Consultations" />
+        <h3>Consultations</h3>
         <p>Expert advice and personalized medication support.</p>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/5x6nkWXJ/Workers-Comp.png" alt="Workers' Compensation">
-        <h4>Workers' Compensation</h4>
+      </article>
+
+      <article class="card">
+        <img src="https://i.ibb.co/5x6nkWXJ/Workers-Comp.png" alt="Workers' Compensation" />
+        <h3>Workers' Compensation</h3>
         <p>We process prescriptions for workers injured on the job — fast, compliant, and with care.</p>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/xSKNFmBp/No-Fault.jpg" alt="No-Fault Insurance">
-        <h4>No-Fault Insurance</h4>
+      </article>
+
+      <article class="card">
+        <img src="https://i.ibb.co/xSKNFmBp/No-Fault.jpg" alt="No-Fault Insurance" />
+        <h3>No-Fault Insurance</h3>
         <p>Seamless medication support for auto accident claims covered by no-fault insurance.</p>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/gLqnjJfK/Personal-Pharmacy-Care.webp" alt="Personalized Care">
-        <h4>Personalized Care</h4>
+      </article>
+
+      <article class="card">
+        <img src="https://i.ibb.co/gLqnjJfK/Personal-Pharmacy-Care.webp" alt="Personalized Care" />
+        <h3>Personalized Care</h3>
         <p>Tailored solutions to fit your lifestyle and needs.</p>
-      </div>
-      <div class="card">
-        <img src="https://i.ibb.co/3Y0Y5dgx/OTC.jpg" alt="OTC Products">
-        <h4>OTC Products</h4>
+      </article>
+
+      <article class="card">
+        <img src="https://i.ibb.co/3Y0Y5dgx/OTC.jpg" alt="OTC Products" />
+        <h3>OTC Products</h3>
         <p>Essentials, supplements, and more — all in one place.</p>
-      </div>
+      </article>
     </div>
   </section>
 
-  <section id="testimonials" class="testimonials" data-aos="fade-up">
-    <h3>What Our Patients Say</h3>
-    <div class="testimonial-slider">
-      <div class="testimonial active">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>“Excellent service and very friendly staff. They always go above and beyond!”</p>
-        <span class="reviewer">— Jessica L.</span>
-      </div>
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐</div>
-        <p>“New Pharmacy in town and I am loving the service!!!”</p>
-        <span class="reviewer">— Fred R.</span>
-      </div>
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>“TrueMed Really cares and makes it effortless”</p>
-        <span class="reviewer">— James P.</span>
-      </div>
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>“Switching to True Med RX was the best decision I made. Super helpful and always quick!”</p>
-        <span class="reviewer">— Ashley D.</span>
-      </div>
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐⭐</div>
-        <p>“Everyone is so knowledgeable and patient. The refill process is super easy.”</p>
-        <span class="reviewer">— Michael S.</span>
-      </div>
-      <div class="testimonial">
-        <div class="stars">⭐⭐⭐⭐</div>
-        <p>“Great pharmacy, clean store, and they even deliver my meds when I can’t get out.”</p>
-        <span class="reviewer">— Linda K.</span>
-      </div>
-    </div>
-    <div class="testimonial-nav">
-      <span class="testimonial-dot active"></span>
-      <span class="testimonial-dot"></span>
-      <span class="testimonial-dot"></span>
-      <span class="testimonial-dot"></span>
-      <span class="testimonial-dot"></span>
-      <span class="testimonial-dot"></span>
-    </div>
-  </section>
+  <!-- Refill / Transfer -->
+  <section id="refill" class="refill">
+    <h2>Refill or Transfer Prescription</h2>
 
-  <section id="refill" class="refill" data-aos="fade-up">
-    <h3>Refill or Transfer Prescription</h3>
-    <form action="https://formsubmit.co/62464f65489fe3b0eedf6092ea20b36b" method="POST">
+    <form action="https://formsubmit.co/62464f65489fe3b0eedf6092ea20b36b" method="POST" class="refill-form">
       <input type="text" name="Full Name" placeholder="Full Name" required />
-      <input type="date" name="DateOfBirth" placeholder="Date of Birth" required />
+      <input type="date" name="DateOfBirth" placeholder="DOB" required />
       <input type="tel" name="Phone" placeholder="Phone Number" required />
       <input type="email" name="Email" placeholder="Email Address" required />
       <input type="text" name="Previous Pharmacy" placeholder="Previous Pharmacy Name (if any)" />
       <input type="text" name="Prescription" placeholder="Prescription Name or RX Number" required />
       <textarea name="Notes" placeholder="Additional Notes (optional)"></textarea>
-      <input type="hidden" name="_next" value="https://truemedpharm.com/thank-you.html">
-      <input type="hidden" name="_captcha" value="false">
-      <button type="submit">Submit Refill Request</button>
+
+      <!-- FormSubmit options -->
+      <input type="hidden" name="_next" value="https://truemedpharm.com/thank-you.html" />
+      <input type="hidden" name="_captcha" value="false" />
+
+      <button type="submit" class="btn btn-primary">Submit Refill Request</button>
     </form>
   </section>
 
-  <section class="wellness" data-aos="fade-up">
-    <h3>Today's Wellness Tip</h3>
-    <p id="wellness-tip"></p>
+  <!-- Wellness Tip -->
+  <section class="wellness">
+    <h2>Today's Wellness Tip</h2>
+    <p id="wellness-tip">Loading tip…</p>
   </section>
 
-  <section id="contact" class="contact" data-aos="fade-up">
-    <h3>Contact Us</h3>
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
     <p><strong>Address:</strong> 568A Larkfield Rd, East Northport, NY 11731</p>
     <p><strong>Email:</strong> TrueMedRXInc@gmail.com</p>
     <p><strong>Phone:</strong> (631) 909-6010</p>
-    <iframe src="https://www.google.com/maps?q=568A+Larkfield+Rd,+East+Northport,+NY+11731&output=embed" allowfullscreen></iframe>
+    <iframe
+      title="Map - True Med RX"
+      src="https://www.google.com/maps?q=568A+Larkfield+Rd,+East+Northport,+NY+11731&output=embed"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </section>
 
-  <footer>
-    <p>© 2025 True Med RX Inc. | <a href="privacy-policy.html">Privacy Policy</a> | <a href="hipaa.html">HIPAA Disclaimer</a></p>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      © 2025 True Med RX Inc. ·
+      <a href="privacy-policy.html">Privacy Policy</a> ·
+      <a href="hipaa.html">HIPAA Disclaimer</a>
+    </p>
     <p>Care You Can Count On</p>
   </footer>
 
-  <a href="https://wa.me/16319096010" class="whatsapp-float" target="_blank" aria-label="Chat with us on WhatsApp">💬</a>
+  <!-- Floating WhatsApp Button -->
+  <a
+    href="https://wa.me/16319096010"
+    target="_blank"
+    class="whatsapp-float"
+    aria-label="Chat with us on WhatsApp"
+  >
+    <img
+      class="whatsapp-icon"
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+      width="36"
+      height="36"
+    />
+  </a>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
